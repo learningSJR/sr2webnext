@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  devIndicators: {
+    buildActivity: false, // removes the loading/compiling indicator
+    appIsrStatus: false, // removes the ISR/Next badge
+  },
+};
 
 export default nextConfig;
