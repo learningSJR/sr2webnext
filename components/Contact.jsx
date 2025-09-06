@@ -33,15 +33,15 @@ const Contact = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
               <Mail className="text-emerald-500 w-6 h-6" />
-              <span>support@sr2edge.com</span>
+              <span>info@sr2edge.com</span>
             </div>
             <div className="flex items-center space-x-4">
               <Phone className="text-emerald-500 w-6 h-6" />
-              <span>+1 (555) 123-4567</span>
+              <span>+19 (44) 426-5859</span>
             </div>
             <div className="flex items-center space-x-4">
               <MapPin className="text-emerald-500 w-6 h-6" />
-              <span>123 Business St, NY, USA</span>
+              <span>MWC Chennai, TN, India</span>
             </div>
           </div>
         </div>
