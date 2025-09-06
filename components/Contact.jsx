@@ -1,56 +1,81 @@
 "use client";
 import React from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="relative w-full h-screen overflow-hidden" id="contact">
-      {/* Background Image with Zoom Animation */}
-      <img
-        src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?"
-        alt="Contact Background"
-        className="absolute inset-0 w-full h-full object-cover animate-slowZoom"
-      />
-
-      {/* Overlay for better readability */}
-      <div className="absolute inset-0 bg-black/50" />
+    <section
+      className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 px-6 py-16"
+      id="contact"
+    >
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1600&auto=format&fit=crop"
+          alt="Contact Background"
+          className="w-full h-full object-cover animate-slowZoom"
+        />
+        <div className="absolute inset-0 bg-black/70" />
+      </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto h-full grid grid-cols-1 md:grid-cols-2 items-center px-6">
-        {/* Left Column */}
-        <div className="hidden md:block text-white max-w-lg">
-          <h2 className="text-3xl md:text-4xl font-bold text-left mb-12 text-white-800">
-            Get in <span className="text-green-600">Touch</span>
+      <div className="relative z-10 container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* Left Column - Info */}
+        <div className="text-white space-y-8">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+            Get in <span className="text-emerald-500">Touch</span>
           </h2>
-          <p className="text-lg text-gray-200">
-            Let’s talk about your next project. Fill out the form and our team
-            will get back to you shortly.
+          <p className="text-lg text-gray-300">
+            Have a question or want to work with us? Reach out and we’ll get
+            back to you as soon as possible.
           </p>
+
+          <div className="space-y-6">
+            <div className="flex items-center space-x-4">
+              <Mail className="text-emerald-500 w-6 h-6" />
+              <span>support@sr2edge.com</span>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Phone className="text-emerald-500 w-6 h-6" />
+              <span>+1 (555) 123-4567</span>
+            </div>
+            <div className="flex items-center space-x-4">
+              <MapPin className="text-emerald-500 w-6 h-6" />
+              <span>123 Business St, NY, USA</span>
+            </div>
+          </div>
         </div>
 
-        {/* Right Column (Contact Form) */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-md ml-auto w-full">
-          <h3 className="text-2xl font-semibold mb-6 text-gray-900">
-            Contact Us
+        {/* Right Column - Contact Form */}
+        <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-8 w-full space-y-4">
+          <h3 className="text-2xl font-semibold mb-6 text-white">
+            Contact <span className="text-emerald-500">Us</span>
           </h3>
           <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-emerald-500 outline-none"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-emerald-500 outline-none"
-            />
-            <textarea
-              rows="4"
-              placeholder="Your Message"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-emerald-500 outline-none"
-            />
+            <div className="bg-gray-800/70 rounded-xl px-4 py-3 border border-gray-700 focus-within:border-emerald-500">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full bg-transparent text-white placeholder-gray-400 outline-none"
+              />
+            </div>
+            <div className="bg-gray-800/70 rounded-xl px-4 py-3 border border-gray-700 focus-within:border-emerald-500">
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full bg-transparent text-white placeholder-gray-400 outline-none"
+              />
+            </div>
+            <div className="bg-gray-800/70 rounded-xl px-4 py-3 border border-gray-700 focus-within:border-emerald-500">
+              <textarea
+                rows="4"
+                placeholder="Your Message"
+                className="w-full bg-transparent text-white placeholder-gray-400 outline-none resize-none"
+              />
+            </div>
             <button
               type="submit"
-              className="w-full bg-emerald-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-emerald-700 transition"
+              className="w-full bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-emerald-700 transition"
             >
               Send Message
             </button>
@@ -69,7 +94,7 @@ const Contact = () => {
           }
         }
         .animate-slowZoom {
-          animation: slowZoom 20s ease-in-out infinite alternate;
+          animation: slowZoom 25s ease-in-out infinite alternate;
         }
       `}</style>
     </section>

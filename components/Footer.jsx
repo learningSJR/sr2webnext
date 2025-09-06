@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   Facebook,
   Twitter,
@@ -33,18 +34,18 @@ const Footer = () => {
               always on our minds!
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="hover:text-green-500">
+              <Link href="#" className="hover:text-green-500">
                 <Facebook size={20} />
-              </a>
-              <a href="#" className="hover:text-green-500">
+              </Link>
+              <Link href="#" className="hover:text-green-500">
                 <Twitter size={20} />
-              </a>
-              <a href="#" className="hover:text-green-500">
+              </Link>
+              <Link href="#" className="hover:text-green-500">
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="hover:text-green-500">
+              </Link>
+              <Link href="#" className="hover:text-green-500">
                 <Linkedin size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -55,34 +56,34 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="#" className="hover:text-green-500">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="Contact" className="hover:text-green-500">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="#" className="hover:text-green-500">
                   Delivery Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="Faq" className="hover:text-green-500">
                   FAQ’s
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="Privacy" className="hover:text-green-500">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="#" className="hover:text-green-500">
                   Return Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -92,29 +93,29 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Shop</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="#" className="hover:text-green-500">
                   Shop
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="#" className="hover:text-green-500">
                   Blog News
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="#" className="hover:text-green-500">
                   New Arrivals
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="#" className="hover:text-green-500">
                   Keywords
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-green-500">
+                <Link href="Sitemap" className="hover:text-green-500">
                   Sitemap
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

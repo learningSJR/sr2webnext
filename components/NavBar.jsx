@@ -3,14 +3,15 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import TopBar from "@/components/TopBar";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuItems = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/#about" },
+    { label: "Services", href: "/#services" },
+    { label: "Contact", href: "./#contact" },
   ];
   return (
     <>
@@ -48,9 +49,12 @@ const Navbar = () => {
                     key={item.href}
                     className="px-4 py-2 md:py-0 text-center md:text-left"
                   >
-                    <a href={item.href} className="hover:text-green-600 block">
+                    <Link
+                      href={item.href}
+                      className="hover:text-green-600 block"
+                    >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
